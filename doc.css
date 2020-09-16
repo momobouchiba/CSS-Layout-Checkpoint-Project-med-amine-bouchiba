@@ -1,0 +1,167 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #747474;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 34px;
+  color: #00b39b;
+  font-weight: 100;
+}
+
+
+.doc-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.logo-doc {
+  width: 268px;
+  height: 33px;
+}
+
+.doc-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doc-menu li {
+  padding: 0 5px;
+}
+
+.doc-menu .active-link a {
+  color: #00b39b;
+}
+.doc-menu li a {
+  color: #ababab;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.doc-menu li a:hover {
+  color: #00b39b;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 5px 10px 0 #d3cfc9;
+  width: 250px;
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 5px;
+}
+
+.dropdown-menu li {
+  padding: 10px 0;
+}
+
+.dropdown-link {
+  position: relative;
+}
+
+.dropdown-link:hover .dropdown-menu {
+  display: flex;
+}
+
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 250px;
+}
+
+.intro-section img {
+  width: 40px;
+  height: 39px;
+}
+
+.intro-section div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-section p {
+  padding: 10px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 250px;
+}
+
+.for-patients {
+  background: #00b39b;
+  color: #fff;
+  border-radius: 10px;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.for-doctors {
+  background: #3d83df;
+  color: #fff;
+  border-radius: 10px;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-section span {
+  font-size: 0.875em;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.services-section h2 {
+  font-size: 1.625em;
+  color: #fff;
+  margin-top: 0.3em;
+  font-weight: 100;
+}
+
+.services-section select {
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.services-section img {
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  bottom: 0;
+  left: 200px;
+}
